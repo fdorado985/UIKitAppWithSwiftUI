@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ShowDataView: View {
+  var dataTextField: UITextField?
+
   var body: some View {
-    Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    VStack {
+      Text("Here is the data passed in:")
+      Text(dataTextField?.text ?? "")
+    }
   }
 }
 
