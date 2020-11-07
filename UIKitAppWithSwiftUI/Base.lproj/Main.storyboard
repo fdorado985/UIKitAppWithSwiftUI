@@ -16,6 +16,16 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKx-Cl-ShS">
+                                <rect key="frame" x="103" y="222" width="208" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open SwiftUI View with Segue"/>
+                                <connections>
+                                    <segue destination="1Ut-Vd-34p" kind="show" id="7Ig-Iv-B9l"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -27,7 +37,9 @@
         <!--Settings View Hosting Controller-->
         <scene sceneID="ez0-5j-d9B">
             <objects>
-                <hostingController id="1Ut-Vd-34p" customClass="SettingsViewHostingController" customModule="UIKitAppWithSwiftUI" customModuleProvider="target" sceneMemberID="viewController"/>
+                <hostingController id="1Ut-Vd-34p" customClass="SettingsViewHostingController" customModule="UIKitAppWithSwiftUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8Nt-eE-1rh"/>
+                </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MPE-DS-7oc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1033" y="119"/>
