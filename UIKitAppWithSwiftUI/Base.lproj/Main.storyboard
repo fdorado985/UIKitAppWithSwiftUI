@@ -43,12 +43,18 @@
                                 <rect key="frame" x="107" y="551" width="180" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Show Data in SwiftUI View"/>
+                                <connections>
+                                    <segue destination="USo-Tj-8oE" kind="show" identifier="toShowDataView" id="ajK-NG-TSx"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="UIViewController" id="F0e-FQ-EhQ"/>
+                    <connections>
+                        <outlet property="dataTextField" destination="w5y-Lb-bjh" id="QZA-i7-HW4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -57,10 +63,12 @@
         <!--Show Data View Hosting View Controller-->
         <scene sceneID="Z4Y-UQ-8fo">
             <objects>
-                <hostingController id="USo-Tj-8oE" customClass="ShowDataViewHostingViewController" customModule="UIKitAppWithSwiftUI" customModuleProvider="target" sceneMemberID="viewController"/>
+                <hostingController id="USo-Tj-8oE" customClass="ShowDataViewHostingViewController" customModule="UIKitAppWithSwiftUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aHk-ek-Qmo"/>
+                </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Whv-dM-HS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1960" y="841"/>
+            <point key="canvasLocation" x="1960" y="856"/>
         </scene>
         <!--SwiftUI View-->
         <scene sceneID="ez0-5j-d9B">
