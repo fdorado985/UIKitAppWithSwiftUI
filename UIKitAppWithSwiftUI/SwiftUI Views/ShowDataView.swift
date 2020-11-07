@@ -13,7 +13,8 @@ struct ShowDataView: View {
   var body: some View {
     VStack {
       Text("Here is the data passed in:")
-      Text(dataTextField?.text ?? "")
+      Text(dataTextField?.text ?? "no data passed in")
+        .fontWeight(.bold)
     }
   }
 }
@@ -21,5 +22,11 @@ struct ShowDataView: View {
 struct ShowDataView_Previews: PreviewProvider {
   static var previews: some View {
     ShowDataView()
+  }
+}
+
+class ShowDataViewHostingViewController: UIHostingController<ShowDataView> {
+  required init?(coder aDecoder: NSCoder) {
+    super.init(rootView: ShowDataView())
   }
 }
