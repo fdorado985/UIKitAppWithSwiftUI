@@ -25,6 +25,14 @@
                                     <segue destination="1Ut-Vd-34p" kind="show" id="7Ig-Iv-B9l"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDz-A3-mAV">
+                                <rect key="frame" x="95" y="258" width="201" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Open SwiftUI View with Code"/>
+                                <connections>
+                                    <action selector="openSwiftUIViewWithCodeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ktt-oC-GvJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
