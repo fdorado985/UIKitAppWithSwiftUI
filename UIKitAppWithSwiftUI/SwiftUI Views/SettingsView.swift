@@ -18,3 +18,9 @@ struct SettingsView_Previews: PreviewProvider {
     SettingsView()
   }
 }
+
+class SettingsViewHostingController: UIHostingController<SettingsView> {
+  required init?(coder aDecoder: NSCoder) {
+    super.init(rootView: SettingsView())
+  }
+}
