@@ -17,39 +17,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKx-Cl-ShS">
-                                <rect key="frame" x="91" y="374" width="208" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Open SwiftUI View with Segue"/>
-                                <connections>
-                                    <segue destination="1Ut-Vd-34p" kind="show" id="7Ig-Iv-B9l"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDz-A3-mAV">
-                                <rect key="frame" x="95" y="441" width="201" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Open SwiftUI View with Code"/>
-                                <connections>
-                                    <action selector="openSwiftUIViewWithCodeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ktt-oC-GvJ"/>
-                                </connections>
-                            </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w5y-Lb-bjh">
-                                <rect key="frame" x="95" y="509" width="204" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmF-0N-7fF">
-                                <rect key="frame" x="107" y="551" width="180" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Show Data in SwiftUI View"/>
-                                <connections>
-                                    <segue destination="USo-Tj-8oE" kind="show" identifier="toShowDataView" id="ajK-NG-TSx"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="YvT-pL-U3I">
+                                <rect key="frame" x="89.666666666666686" y="291" width="211" height="262"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKx-Cl-ShS">
+                                        <rect key="frame" x="0.0" y="0.0" width="211" height="30"/>
+                                        <state key="normal" title="Open SwiftUI View with Segue"/>
+                                        <connections>
+                                            <segue destination="1Ut-Vd-34p" kind="show" id="7Ig-Iv-B9l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lDz-A3-mAV">
+                                        <rect key="frame" x="0.0" y="57" width="211" height="30"/>
+                                        <state key="normal" title="Open SwiftUI View with Code"/>
+                                        <connections>
+                                            <action selector="openSwiftUIViewWithCodeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ktt-oC-GvJ"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w5y-Lb-bjh">
+                                        <rect key="frame" x="0.0" y="114" width="211" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lmF-0N-7fF">
+                                        <rect key="frame" x="0.0" y="175" width="211" height="30"/>
+                                        <state key="normal" title="Show Data in SwiftUI View"/>
+                                        <connections>
+                                            <segue destination="USo-Tj-8oE" kind="show" identifier="toShowDataView" id="ajK-NG-TSx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YRC-Ca-usv">
+                                        <rect key="frame" x="0.0" y="232" width="211" height="30"/>
+                                        <state key="normal" title="Pass Data in SwiftUI with Code"/>
+                                        <connections>
+                                            <action selector="passDataInSwiftUIWithCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwE-8p-8fM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YvT-pL-U3I" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="iPn-K5-T3x"/>
+                            <constraint firstItem="YvT-pL-U3I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lHn-Te-wBy"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="UIViewController" id="F0e-FQ-EhQ"/>
                     <connections>
