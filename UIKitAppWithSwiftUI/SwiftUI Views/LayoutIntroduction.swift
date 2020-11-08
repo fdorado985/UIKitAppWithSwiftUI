@@ -18,7 +18,14 @@ struct LayoutIntroduction: View {
       RoundedRectangle(cornerRadius: 25.0)
         .frame(width: 100.0, height: 100.0)
       Spacer()
-
+      // Horizontal
+      HStack {
+        Spacer()
+        RoundedRectangle(cornerRadius: 25.0)
+          .frame(width: 100.0, height: 100.0)
+        RoundedRectangle(cornerRadius: 25.0)
+          .frame(width: 100.0, height: 100.0)
+      }
     }
   }
 }
