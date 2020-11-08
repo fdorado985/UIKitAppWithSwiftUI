@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SendDataBackToUIKit: View {
   var sendNameBack: ((String) -> Void)?
-  @State var name: String = ""
+  @State private var name: String = ""
 
   var body: some View {
     VStack {

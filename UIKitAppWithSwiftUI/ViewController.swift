@@ -12,6 +12,7 @@ class ViewController: UIViewController {
   // MARK: - Outlets
 
   @IBOutlet weak var dataTextField: UITextField!
+  @IBOutlet weak var nameLabel: UILabel!
 
   // MARK: - View Lifecycle
 
@@ -26,12 +27,20 @@ class ViewController: UIViewController {
     navigationController?.pushViewController(profileView, animated: true)
   }
 
-  @IBAction func passDataInSwiftUIWithCode(_ sender: UIButton) {
+  @IBAction func passDataInSwiftUIWithCodeDidTap(_ sender: UIButton) {
     let view = ShowDataViewWithCode(dataPassedIn: dataTextField.text ?? "")
     let dataView = UIHostingController(rootView: view)
     navigationController?.pushViewController(dataView, animated: true)
   }
 
+  @IBAction func enterNameButtonDidTap(_ sender: UIButton) {
+    let view = SendDataBackToUIKit { [weak self] (name) in
+      self?.nameLabel.text = name
+    }
+
+    let nameView = UIHostingController(rootView: view)
+    navigationController?.pushViewController(nameView, animated: true)
+  }
   // MARK: - Navigation
 
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

@@ -2,7 +2,6 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="trj-Cu-9nb">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -18,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="27" translatesAutoresizingMaskIntoConstraints="NO" id="YvT-pL-U3I">
-                                <rect key="frame" x="89.666666666666686" y="291" width="211" height="262"/>
+                                <rect key="frame" x="89.666666666666686" y="238.99999999999997" width="211" height="366.33333333333326"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKx-Cl-ShS">
                                         <rect key="frame" x="0.0" y="0.0" width="211" height="30"/>
@@ -50,9 +49,22 @@
                                         <rect key="frame" x="0.0" y="232" width="211" height="30"/>
                                         <state key="normal" title="Pass Data in SwiftUI with Code"/>
                                         <connections>
-                                            <action selector="passDataInSwiftUIWithCode:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwE-8p-8fM"/>
+                                            <action selector="passDataInSwiftUIWithCodeDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wwE-8p-8fM"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaU-sd-AjA">
+                                        <rect key="frame" x="0.0" y="289" width="211" height="30"/>
+                                        <state key="normal" title="Enter Name"/>
+                                        <connections>
+                                            <action selector="enterNameButtonDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f6b-II-jYV"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap 👆 to name!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fc1-7z-Gey">
+                                        <rect key="frame" x="0.0" y="346" width="211" height="20.333333333333314"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -66,6 +78,7 @@
                     <navigationItem key="navigationItem" title="UIViewController" id="F0e-FQ-EhQ"/>
                     <connections>
                         <outlet property="dataTextField" destination="w5y-Lb-bjh" id="QZA-i7-HW4"/>
+                        <outlet property="nameLabel" destination="fc1-7z-Gey" id="StF-h2-PQC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
