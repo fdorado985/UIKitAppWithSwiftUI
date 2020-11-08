@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A92E857625587036001F7894 /* SendDataBackToUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E857525587036001F7894 /* SendDataBackToUIKit.swift */; };
 		A9A94D2025568CDA00CB8496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A94D1F25568CDA00CB8496 /* AppDelegate.swift */; };
 		A9A94D2225568CDA00CB8496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A94D2125568CDA00CB8496 /* SceneDelegate.swift */; };
 		A9A94D2425568CDA00CB8496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A94D2325568CDA00CB8496 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A92E857525587036001F7894 /* SendDataBackToUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBackToUIKit.swift; sourceTree = "<group>"; };
 		A9A94D1C25568CDA00CB8496 /* UIKitAppWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitAppWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A94D1F25568CDA00CB8496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A94D2125568CDA00CB8496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				A9A94D392556906700CB8496 /* ProfileView.swift */,
 				A9A94D3C25571E7F00CB8496 /* ShowDataView.swift */,
 				A9A94D3F2557994A00CB8496 /* ShowDataViewWithCode.swift */,
+				A92E857525587036001F7894 /* SendDataBackToUIKit.swift */,
 			);
 			path = "SwiftUI Views";
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 			files = (
 				A9A94D2425568CDA00CB8496 /* ViewController.swift in Sources */,
 				A9A94D3625568D0D00CB8496 /* SettingsView.swift in Sources */,
+				A92E857625587036001F7894 /* SendDataBackToUIKit.swift in Sources */,
 				A9A94D3A2556906700CB8496 /* ProfileView.swift in Sources */,
 				A9A94D2025568CDA00CB8496 /* AppDelegate.swift in Sources */,
 				A9A94D402557994A00CB8496 /* ShowDataViewWithCode.swift in Sources */,
