@@ -12,6 +12,7 @@ struct LayoutIntroduction: View {
     ZStack {
       // Back
       Color.pink
+        .ignoresSafeArea()
 
       // Layer
       VStack {
