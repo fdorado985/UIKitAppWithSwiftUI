@@ -9,23 +9,31 @@ import SwiftUI
 
 struct LayoutIntroduction: View {
   var body: some View {
-    VStack {
-      Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-      RoundedRectangle(cornerRadius: 25.0)
-        .frame(width: 100.0, height: 100.0)
-      RoundedRectangle(cornerRadius: 25.0)
-        .frame(width: 100.0, height: 100.0)
-      RoundedRectangle(cornerRadius: 25.0)
-        .frame(width: 100.0, height: 100.0)
-      Spacer()
-      // Horizontal
-      HStack {
+    ZStack {
+      // Back
+      Color.pink
+
+      // Layer
+      VStack {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        RoundedRectangle(cornerRadius: 25.0)
+          .frame(width: 100.0, height: 100.0)
+        RoundedRectangle(cornerRadius: 25.0)
+          .frame(width: 100.0, height: 100.0)
+        RoundedRectangle(cornerRadius: 25.0)
+          .frame(width: 100.0, height: 100.0)
         Spacer()
-        RoundedRectangle(cornerRadius: 25.0)
-          .frame(width: 100.0, height: 100.0)
-        RoundedRectangle(cornerRadius: 25.0)
-          .frame(width: 100.0, height: 100.0)
+        // Horizontal
+        HStack {
+          Spacer()
+          RoundedRectangle(cornerRadius: 25.0)
+            .frame(width: 100.0, height: 100.0)
+          RoundedRectangle(cornerRadius: 25.0)
+            .frame(width: 100.0, height: 100.0)
+        }
       }
+
+      // Front
     }
   }
 }
