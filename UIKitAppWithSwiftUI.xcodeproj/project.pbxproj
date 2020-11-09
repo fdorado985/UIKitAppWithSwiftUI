@@ -10,6 +10,7 @@
 		A92E857625587036001F7894 /* SendDataBackToUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E857525587036001F7894 /* SendDataBackToUIKit.swift */; };
 		A92E85792558A881001F7894 /* LayoutIntroduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E85782558A881001F7894 /* LayoutIntroduction.swift */; };
 		A92E857C2558C1E6001F7894 /* ComplexUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E857B2558C1E6001F7894 /* ComplexUIView.swift */; };
+		A92E8580255922B7001F7894 /* LazyVStackExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E857F255922B7001F7894 /* LazyVStackExample.swift */; };
 		A9A94D2025568CDA00CB8496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A94D1F25568CDA00CB8496 /* AppDelegate.swift */; };
 		A9A94D2225568CDA00CB8496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A94D2125568CDA00CB8496 /* SceneDelegate.swift */; };
 		A9A94D2425568CDA00CB8496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A94D2325568CDA00CB8496 /* ViewController.swift */; };
@@ -26,6 +27,7 @@
 		A92E857525587036001F7894 /* SendDataBackToUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBackToUIKit.swift; sourceTree = "<group>"; };
 		A92E85782558A881001F7894 /* LayoutIntroduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutIntroduction.swift; sourceTree = "<group>"; };
 		A92E857B2558C1E6001F7894 /* ComplexUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexUIView.swift; sourceTree = "<group>"; };
+		A92E857F255922B7001F7894 /* LazyVStackExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyVStackExample.swift; sourceTree = "<group>"; };
 		A9A94D1C25568CDA00CB8496 /* UIKitAppWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitAppWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A94D1F25568CDA00CB8496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A94D2125568CDA00CB8496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A92E857E2559229F001F7894 /* Tables and Collection Views */ = {
+			isa = PBXGroup;
+			children = (
+				A92E857F255922B7001F7894 /* LazyVStackExample.swift */,
+			);
+			path = "Tables and Collection Views";
+			sourceTree = "<group>";
+		};
 		A9A94D1325568CD900CB8496 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		A9A94D3425568D0000CB8496 /* SwiftUI Views */ = {
 			isa = PBXGroup;
 			children = (
+				A92E857E2559229F001F7894 /* Tables and Collection Views */,
 				A9A94D3525568D0D00CB8496 /* SettingsView.swift */,
 				A9A94D392556906700CB8496 /* ProfileView.swift */,
 				A9A94D3C25571E7F00CB8496 /* ShowDataView.swift */,
@@ -176,6 +187,7 @@
 				A92E857C2558C1E6001F7894 /* ComplexUIView.swift in Sources */,
 				A9A94D2225568CDA00CB8496 /* SceneDelegate.swift in Sources */,
 				A9A94D3D25571E7F00CB8496 /* ShowDataView.swift in Sources */,
+				A92E8580255922B7001F7894 /* LazyVStackExample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
