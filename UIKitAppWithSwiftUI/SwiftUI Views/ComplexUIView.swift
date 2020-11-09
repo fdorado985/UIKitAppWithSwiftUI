@@ -15,22 +15,48 @@ struct ComplexUIView: View {
         .ignoresSafeArea()
 
       // Layer on Top
-      VStack(alignment: .leading) {
-        Text("Jane Cooper")
-          .font(.title)
-          .fontWeight(.bold)
-        Text("Project Manager")
-          .font(.title3)
+      VStack(alignment: .leading, spacing: 20.0) {
+        HStack {
+          VStack(alignment: .leading) {
+            Text("Jane Cooper")
+              .font(.title)
+              .fontWeight(.bold)
+            Text("Project Manager")
+              .font(.title3)
+          }
+          Spacer()
+          RoundedRectangle(cornerRadius: 5)
+            .frame(width: 50.0, height: 50.0)
+        }
+
         Text("My Tasks")
           .font(.title)
           .fontWeight(.bold)
-        Text("To do")
-          .fontWeight(.bold)
-        Text("In Progress")
-          .fontWeight(.bold)
-        Text("Done")
-          .fontWeight(.bold)
-        VStack(alignment: .leading) {
+        HStack {
+          RoundedRectangle(cornerRadius: 5)
+            .frame(width: 50.0, height: 50.0)
+          Text("To do")
+            .fontWeight(.bold)
+          Spacer()
+          Text("5 tasks")
+        }
+        HStack {
+          RoundedRectangle(cornerRadius: 5)
+            .frame(width: 50.0, height: 50.0)
+          Text("In Progress")
+            .fontWeight(.bold)
+          Spacer()
+          Text("6 tasks")
+        }
+        HStack {
+          RoundedRectangle(cornerRadius: 5)
+            .frame(width: 50.0, height: 50.0)
+          Text("Done")
+            .fontWeight(.bold)
+          Spacer()
+          Text("25 tasks")
+        }
+        VStack(alignment: .leading, spacing: 40.0) {
           Text("Recently Assigned")
             .font(.title)
             .fontWeight(.bold)
@@ -40,6 +66,7 @@ struct ComplexUIView: View {
           Text("12 Oct 2020")
         }
       }
+      .padding()
     }
   }
 }
