@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct ComplexUIView: View {
+  @State private var searchText = ""
+
   var body: some View {
     ZStack {
       // Back layer
@@ -28,6 +30,18 @@ struct ComplexUIView: View {
           RoundedRectangle(cornerRadius: 5)
             .frame(width: 50.0, height: 50.0)
         }
+        TextField("Search", text: $searchText)
+          .padding()
+          .background(
+            Capsule()
+              .fill(Color.white)
+          )
+          .overlay(
+            Image(systemName: "magnifyingglass")
+              .foregroundColor(.gray)
+              .padding(),
+            alignment: .trailing
+          )
 
         Text("My Tasks")
           .font(.title)
