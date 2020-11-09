@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A92E857625587036001F7894 /* SendDataBackToUIKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E857525587036001F7894 /* SendDataBackToUIKit.swift */; };
 		A92E85792558A881001F7894 /* LayoutIntroduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E85782558A881001F7894 /* LayoutIntroduction.swift */; };
+		A92E857C2558C1E6001F7894 /* ComplexUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A92E857B2558C1E6001F7894 /* ComplexUIView.swift */; };
 		A9A94D2025568CDA00CB8496 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A94D1F25568CDA00CB8496 /* AppDelegate.swift */; };
 		A9A94D2225568CDA00CB8496 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A94D2125568CDA00CB8496 /* SceneDelegate.swift */; };
 		A9A94D2425568CDA00CB8496 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9A94D2325568CDA00CB8496 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 /* Begin PBXFileReference section */
 		A92E857525587036001F7894 /* SendDataBackToUIKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendDataBackToUIKit.swift; sourceTree = "<group>"; };
 		A92E85782558A881001F7894 /* LayoutIntroduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutIntroduction.swift; sourceTree = "<group>"; };
+		A92E857B2558C1E6001F7894 /* ComplexUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexUIView.swift; sourceTree = "<group>"; };
 		A9A94D1C25568CDA00CB8496 /* UIKitAppWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitAppWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9A94D1F25568CDA00CB8496 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A9A94D2125568CDA00CB8496 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 				A9A94D3F2557994A00CB8496 /* ShowDataViewWithCode.swift */,
 				A92E857525587036001F7894 /* SendDataBackToUIKit.swift */,
 				A92E85782558A881001F7894 /* LayoutIntroduction.swift */,
+				A92E857B2558C1E6001F7894 /* ComplexUIView.swift */,
 			);
 			path = "SwiftUI Views";
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				A9A94D2025568CDA00CB8496 /* AppDelegate.swift in Sources */,
 				A9A94D402557994A00CB8496 /* ShowDataViewWithCode.swift in Sources */,
 				A92E85792558A881001F7894 /* LayoutIntroduction.swift in Sources */,
+				A92E857C2558C1E6001F7894 /* ComplexUIView.swift in Sources */,
 				A9A94D2225568CDA00CB8496 /* SceneDelegate.swift in Sources */,
 				A9A94D3D25571E7F00CB8496 /* ShowDataView.swift in Sources */,
 			);
