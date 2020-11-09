@@ -15,8 +15,30 @@ struct ComplexUIView: View {
         .ignoresSafeArea()
 
       // Layer on Top
-      VStack {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+      VStack(alignment: .leading) {
+        Text("Jane Cooper")
+          .font(.title)
+          .fontWeight(.bold)
+        Text("Project Manager")
+          .font(.title3)
+        Text("My Tasks")
+          .font(.title)
+          .fontWeight(.bold)
+        Text("To do")
+          .fontWeight(.bold)
+        Text("In Progress")
+          .fontWeight(.bold)
+        Text("Done")
+          .fontWeight(.bold)
+        VStack(alignment: .leading) {
+          Text("Recently Assigned")
+            .font(.title)
+            .fontWeight(.bold)
+          Text("Mobile App")
+            .fontWeight(.bold)
+          Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sodales enim diam, nec lobortis tortor finibus at.")
+          Text("12 Oct 2020")
+        }
       }
     }
   }
