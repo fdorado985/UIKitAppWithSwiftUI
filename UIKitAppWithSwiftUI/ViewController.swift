@@ -34,7 +34,7 @@ class ViewController: UIViewController {
   }
 
   @IBAction func enterNameButtonDidTap(_ sender: UIButton) {
-    let view = SendDataBackToUIKit { [weak self] (name) in
+    let view = SendDataBackToUIKit { [weak self] name in
       self?.nameLabel.text = name
     }
 
@@ -51,4 +51,3 @@ class ViewController: UIViewController {
     }
   }
 }
-

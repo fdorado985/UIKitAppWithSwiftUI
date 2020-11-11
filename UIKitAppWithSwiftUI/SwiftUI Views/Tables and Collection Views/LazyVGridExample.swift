@@ -15,7 +15,7 @@ struct LazyVGridExample: View {
           GridItem(.adaptive(minimum: 100, maximum: 200))
         ]
       ) {
-        ForEach(0 ..< 50) { item in
+        ForEach(0 ..< 50) { _ in
           VStack {
             Circle()
               .frame(width: 50, height: 50)

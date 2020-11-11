@@ -17,12 +17,15 @@ struct SendDataBackToUIKit: View {
       TextField("Name", text: $name)
         .textFieldStyle(RoundedBorderTextFieldStyle())
         .padding()
-      Button(action: {
-        guard let sendNameBack = sendNameBack else { return }
-        sendNameBack(name)
-      }) {
-        Text("Update name")
-      }
+      Button(
+        action: {
+          guard let sendNameBack = sendNameBack else { return }
+          sendNameBack(name)
+        },
+        label: {
+          Text("Update name")
+        }
+      )
     }
     .padding(16.0)
   }
